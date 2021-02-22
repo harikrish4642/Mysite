@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="F:\Mysite\test.css">
+<link rel="stylesheet" href="F:\Mysite\sidenav.css">
+<link rel="preconnect" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="left-col">
+<!--sidenav-->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="showx();">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<div id="clr" class="container" onclick="myFunction(this);openNav();clearx();">
+  <div class="bar1" id="container1" ></div>
+  <div class="bar2" id="container2" ></div>
+  <div class="bar3" id="container3" ></div>
+</div>
+<div id="clear">
+<p id="clear">&nbsp</p>
+</div>
+
+<script>
+
+function openNav()
+{
+  document.getElementById("myNav").style.width = "100%";
+}
+function closeNav()
+ {
+  document.getElementById("myNav").style.width = "0%";
+}
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+function clearx()
+ {
+  document.getElementById("clr").style.display='none';
+}
+function showx()
+ {
+ document.getElementById("myNav").style.width = "0%";
+  document.getElementById("clr").style.display='block';
+}
+</script>
+<!--sidenav-->
+<!------------------------------------------------------------------------------------------>
+<!--button-->
+<div class="btnclass">
+<p><button class="btn">Say Hello!</button></p>
+</div>
+<!--heading-->
+<div class="heading">
+<p>Developer, Blogger and Content Creator</p><p style="font-family:Lexend Mega;font-size:1vw">I design and code beautifully simple things, and I Create content that's what I love to do.</p>
+</div>
+<!--avatar-->
+<img class="avatar" src="C:\Users\hari krishna\Downloads\profile2.jpeg" alt="avatar"></img>
+</div>
+<div class="avatar2">
+<img class="avatar"src="https://mattfarley.ca/img/hero.svg" alt="avatar2"></img></div>
+<section class="middle">
+<div class="middle-content">
+<div class="middle-content2">
+<h1 style="font-size:32px;"><strong>Hi, I’m Hari. Nice to meet you.</strong></h1>
+<h2 style="font-size:20px;">Since beginning my journey as a Software Engineer nearly 2 years ago,<br>I've Consulted
+ for startups, and collaborated with talented people to create<br>
+ digital products for both business and consumer use. I'm quietly confident, naturally curious,<br>
+ and perpetually working on improving my chops one design problem at a time.</h1>
+ </div>
+ </div>
+ </section>
+</body>
+</html>
